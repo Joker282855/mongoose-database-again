@@ -16,8 +16,12 @@ const DescriptionSchema = new Schema(
         },
         username: {
             type: String,
-
+            required: [true, 'Please enter your username']
         }
     }
-)
+);
+
+const Description = model('Description', DescriptionSchema);
+
+module.exports = Description;
 
