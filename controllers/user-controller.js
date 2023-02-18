@@ -1,6 +1,6 @@
 const { User } = require('../models');
 
-const userControl = {
+const userController = {
     
     getAllUsers(req, res) {
 
@@ -65,4 +65,4 @@ const userControl = {
    }
 }
 
-module.exports = userControl;
+module.exports = userController;

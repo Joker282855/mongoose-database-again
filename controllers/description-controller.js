@@ -1,6 +1,6 @@
 const { User, Description } = require('../models');
 co
-const descriptionControll = {
+const descriptionController = {
     // add description to user
     addDescription({ params, body }, res) {
         console.log(body);
@@ -26,8 +26,13 @@ const descriptionControll = {
         Description.findByIdAndDelete({ _id: params.descriptionId })
             .then(dbDscriptionData => {
                 if (!dbDscriptionData) {
-                    res.status(404).json({ message: 'No description found with this id' })
+                    res.status(404).json({ message: 'No description found with this id' });
+                    return;
                 }
+                res.json(dbDscriptionData);
             })
+            .catch(err => res.json(err));
     }
-}
+};
+
+module.exports = descriptionController;
