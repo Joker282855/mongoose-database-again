@@ -39,7 +39,7 @@ const userControl = {
             .catch(err => res.status(404).json(err));
     },
 
-    updatedUser({ params, boyd }, res) {
+    updatedUser({ params, body }, res) {
 
         User.findOneAndUpdate({ _id: params.id }, body, { new: true })
             .then(dbUserData => {
@@ -48,7 +48,21 @@ const userControl = {
                     return;
                 }
                 res.json(dbUserData);
-            });
-            
-    }
+            })
+            .catch(err => res.status(400).json(err));           
+   },
+
+   deleteUser({ params }, res) {
+        User.findOneAndDelete({ _id: params.id })
+            .then(dbUserData => {
+                if (!dbUserData) {
+                    res.status(404).json({ message: 'No user found with this id' });
+                    return;
+                }
+                res.json(dbUserData);
+            })   
+            .catch( err => res.status(400).json(er));
+   }
 }
+
+module.exports = userControl;
