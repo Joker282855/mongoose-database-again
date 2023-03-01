@@ -3,6 +3,6 @@ const userRoutes = require('./user-routes');
 const descriptionRoutes = require('./description-routes');
 
 router.use('/users', userRoutes);
-router.use('/descripbed', descriptionRoutes);
+router.use('/described', descriptionRoutes);
 
 module.exports = router;
