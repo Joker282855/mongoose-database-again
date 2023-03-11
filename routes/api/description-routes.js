@@ -9,7 +9,7 @@ router.route('/:userId').post(addDescription);
 
 // This route will be used to delete a description from a post
 router
-    .router('/:userId/:descriptionId')
+    .route('/:userId/:descriptionId')
     .delete(removeDescription)
 
 module.exports = router;

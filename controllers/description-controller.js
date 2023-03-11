@@ -1,5 +1,5 @@
 const { User, Description } = require('../models');
-co
+
 const descriptionController = {
     // add description to user
     addDescription({ params, body }, res) {
