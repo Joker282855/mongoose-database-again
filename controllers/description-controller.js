@@ -1,4 +1,4 @@
-const { User, Description } = require('../models');
+const { Description, User } = require('../models');
 
 const descriptionController = {
     // add description to user

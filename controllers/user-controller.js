@@ -4,10 +4,10 @@ const userController = {
     
     getAllUsers(req, res) {
 
-        User.findAll({})
+        User.find({})
             .select('__v')
             .sort({ _id: -1 })
-            .then(dbUserData => res.josn(dbUserData))
+            .then(dbUserData => res.json(dbUserData))
             .catch(err => {
                 console.log(err);
                 res.status(404).json(err);
