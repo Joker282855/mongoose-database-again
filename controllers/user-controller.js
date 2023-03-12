@@ -5,7 +5,11 @@ const userController = {
     getAllUsers(req, res) {
 
         User.find({})
-            .select('__v')
+            .populate({
+                path: 'description',
+                select: '-__v'
+            })
+            .select('-__v')
             .sort({ _id: -1 })
             .then(dbUserData => res.json(dbUserData))
             .catch(err => {
@@ -17,7 +21,7 @@ const userController = {
     getUserById({ params }, res) {
 
         User.findOne({ _id: params.id })
-            .select('__v')
+            .select('-__v')
             .then(dbUserData => {
 
                 if (!dbUserData) {

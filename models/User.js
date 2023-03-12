@@ -12,7 +12,13 @@ const UserSchema = new Schema(
             type: String,
             unique: true,
             required: [true, 'Please enter a valid email'],
-        }
+        },
+        description: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'Description'
+            }
+        ]
     }
 );
 

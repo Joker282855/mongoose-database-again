@@ -8,7 +8,7 @@ const descriptionController = {
             .then(({ _id }) => {
                 return User.findOneAndUpdate(
                     { _id: params.userId },
-                    { $push: { thoughts_id  } },
+                    { $push: { description: _id } },
                     { new: true }
                 );
             })
@@ -19,17 +19,27 @@ const descriptionController = {
                 }
                 res.json(dbUserData);
             })
-            .catch(err => res.status(500).json(err));
+            .catch(err => res.json(err));
     },
 
     removeDescription({ params }, res) {
-        Description.findByIdAndDelete({ _id: params.descriptionId })
-            .then(dbDscriptionData => {
-                if (!dbDscriptionData) {
+        Description.findOneAndDelete({ _id: params.descriptionId })
+            .then(deletedDescription => {
+                if (!deletedDescription) {
+                    res.status(404).json({ message: 'No user found with this is' });
+                }
+                return User.findOneAndUpdate(
+                    { _id: params.userId },
+                    { $pull: { description: params.descriptionId } },
+                    { new: true }
+                )
+            })
+            .then(dbUserData => {
+                if (!dbUserData) {
                     res.status(404).json({ message: 'No description found with this id' });
                     return;
                 }
-                res.json(dbDscriptionData);
+                res.json(dbUserData);
             })
             .catch(err => res.json(err));
     }
