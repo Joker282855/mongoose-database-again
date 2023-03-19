@@ -23,9 +23,11 @@ const ViewSchema = new Schema (
         }  
     },
     {
-        
+        toJSON: {
+            getters: true
+        }
     }
-)
+);
 
 const DescriptionSchema = new Schema(
     {
@@ -43,6 +45,13 @@ const DescriptionSchema = new Schema(
         username: {
             type: String,
             required: [true, 'Please enter your username']
+        },
+        views: [ViewSchema]
+    },
+    {
+        toJSON: {
+            virtuals: true,
+            getters: true
         }
     }
 );
