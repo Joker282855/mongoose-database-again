@@ -9,8 +9,21 @@ const ViewSchema = new Schema (
         },
         viewText: {
             type: String,
-            required: [true, 'Please tell us your view on this article']
-        }
+            required: [true, 'Please tell us your view on this article'],
+            maxLength: [280, 'Please keep your message under 280 characters']
+        },
+        username: {
+            type: String,
+            required: [true, 'Please enter your username when entering your comment']
+        },
+        createdAt: {
+            type: Date,
+            default: Date.now,
+            get: createdAtVal => dateFormat(createdAtVal)
+        }  
+    },
+    {
+        
     }
 )
 
