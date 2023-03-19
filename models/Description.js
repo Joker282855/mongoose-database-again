@@ -1,6 +1,19 @@
 const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
+const ViewSchema = new Schema (
+    {
+        viewId: {
+            type: Schema.Types.ObjectId,
+            default: () => new Types.ObjectId
+        },
+        viewText: {
+            type: String,
+            required: [true, 'Please tell us your view on this article']
+        }
+    }
+)
+
 const DescriptionSchema = new Schema(
     {
         descriptionText: {
