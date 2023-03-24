@@ -52,9 +52,14 @@ const DescriptionSchema = new Schema(
         toJSON: {
             virtuals: true,
             getters: true
-        }
+        },
+        id: false
     }
 );
+
+DescriptionSchema.virtual('viewCount').get(function() {
+    return this.vieww.length
+});
 
 const Description = model('Description', DescriptionSchema);
 
