@@ -25,8 +25,13 @@ Make sure you download the one based on the type of you computer.
 
 <a href="https://code.visualstudio.com/download">Visual Studio Code Download Link</a>
 
-After downloading visual studio code all that is left is to clone the source code from my github repository. 
-After following the link a person needs 
+After downloading visual studio code a person needs to download the source code from my 
+github repostiory. The link to my respository is listed below. 
+
+<a href="https://github.com/Joker282855/mongoose-database-again">Repository Link</a>
+
+The green button at the top of right of the repository is what contains the link needed
+to download this database onto another computer.
 
 # Video Link
 
