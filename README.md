@@ -18,6 +18,18 @@ at Utah University. It helped me to refresh my memory on how to use mongoose to 
 if I ever got stuck. The other resource I used was reviewing the lesson material on mongoose databases provided to me by the 
 University of Utah.
 
+# Downloading Database
+If a person wants to download this database onto thier own computer they need to make sure they have the right
+software downloaded onto thier computer. The software he or she needs to download is called visual studio code. 
+Make sure you download the one based on the type of you computer.
+
+<a href="https://code.visualstudio.com/download">Visual Studio Code Download Link</a>
+
+After downloading visual studio code all that is left is to clone the source code from my github repository. 
+After following the link a person needs 
+
+# Video Link
+
 # Contributors
 Made by Josh Jackson
 
