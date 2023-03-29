@@ -12,4 +12,12 @@ mongoose to watch the demonstration vdieo.
 - Enable a user to be deleted from the database when necessary
 - Allow comments to a blog post to be deleted if necessary
 
-#
+# Tasks Achieved By
+I was able to achieve the tasks listed above by looking at the mongoose database I created while attending the coding bootcamp
+at Utah University. It helped me to refresh my memory on how to use mongoose to create a functioning database and provided pointers 
+if I ever got stuck. The other resource I used was reviewing the lesson material on mongoose databases provided to me by the 
+University of Utah.
+
+# Contributors
+Made by Josh Jackson
+
