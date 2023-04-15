@@ -1,15 +1,16 @@
 # Mongoose Database Again
 
 # Purpose
-To demonstrate how a mongoose database works and how information can be retireved from the database. The demonstration
-for this databse can be found at the bottom of this file. I encourage anybody who wants to become more familiar with 
-mongoose to watch the demonstration vdieo.
+I created this database as a way to maintain my coding skills with MongooseDB. This database resembles a blog
+where users can post articles and have other users resopnd to their posts. I was able to check the information
+this database contains by using the insomnia software as I built gthe database. I encourage anybody who wants 
+to become more familiar with mongoose to watch the demonstration vdieo.
 
 # Tasks
-- Enable a user to post articles that he or she finds interesting on a blog
-- Enable a user to react and comment to articles already posted by other users
+- As a user I can post articles that I find interesting on a blog
+- As a user I can react and comment to articles already posted by other users
 - Create a reply section that allows users to interact with one another
-- Enable a user to be deleted from the database when necessary
+- AS a user my posts can be deleted if necessary
 - Allow comments to a blog post to be deleted if necessary
 
 # Tasks Achieved By
