@@ -14,28 +14,32 @@ to become more familiar with mongoose to watch the demonstration vdieo.
 - Allow comments to a blog post to be deleted if necessary
 
 # Tasks Achieved By
-I was able to achieve the tasks listed above by looking at the mongoose database I created while attending the coding bootcamp
+I was able to achieve these tasks by looking at the mongoose database I created while attending the coding bootcamp
 at Utah University. It helped me to refresh my memory on how to use mongoose to create a functioning database and provided pointers 
 if I ever got stuck. The other resource I used was reviewing the lesson material on mongoose databases provided to me by the 
 University of Utah.
 
 # Downloading Database
 If a person wants to download this database onto thier own computer they need to make sure they have the right
-software downloaded onto thier computer. The software he or she needs to download is called visual studio code. 
-Make sure you download the one based on the type of you computer.
+software downloaded onto thier computer. The software he or she needs to download is called Visual Studio Code. 
+Make sure you download the one based on the type of you computer. The link to download Visual Studio Code is
+listed below.
 
 <a href="https://code.visualstudio.com/download">Visual Studio Code Download Link</a>
 
-After downloading visual studio code a person needs to download the source code from my 
+After downloading Visual Studio Code a person needs to download the source code from my 
 github repostiory. The link to my respository is listed below. 
 
 <a href="https://github.com/Joker282855/mongoose-database-again">Repository Link</a>
 
 The green button at the top of right of the repository is what contains the link needed
-to download this database onto another computer.
+to download this database onto another computer. The link a person wants to choose is the
+http option. The next thing a person needs to do is open up Visual Studio Code. After opening
+Visual Studio Code A Person needs to type the command git clone in Visual Studio Codes terminal
+with the http link coming after it. This will download the database onto the desired computer.
 
 # Video Link
 
 # Contributors
-Made by Josh Jackson
+Made with love by Josh Jackson
 
